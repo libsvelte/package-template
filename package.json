@@ -1,0 +1,32 @@
+{
+	"name": "@libsvelte/package-template",
+	"version": "0.0.0",
+	"description": "monorepo package project template",
+	"type": "module",
+	"main": "src/index.ts",
+	"module": "src/index.ts",
+	"svelte": "src/index.ts",
+	"types": "src/index.ts",
+	"keywords": [
+		"svelte",
+		"ui"
+	],
+	"author": "stdlout",
+	"homepage": "",
+	"license": "MIT",
+	"scripts": {
+		"package": "svelte-kit package"
+	},
+	"devDependencies": {
+		"@sveltejs/kit": "next",
+		"autoprefixer": "latest",
+		"cssnano": "latest",
+		"postcss": "latest",
+		"svelte": "latest",
+		"svelte-check": "latest",
+		"svelte-preprocess": "latest",
+		"svelte2tsx": "latest",
+		"tslib": "latest",
+		"typescript": "latest"
+	}
+}
