@@ -15,7 +15,6 @@ const config = {
     kit: {
         files: {
             assets: 'static',
-            hooks: 'src/hooks',
             lib: 'src',
         },
         package: {
@@ -24,7 +23,7 @@ const config = {
             // excludes all .d.ts and files starting with _ as the name
             exports: (filepath) => !/^_|\/_|\.d\.ts$/.test(filepath),
             files: () => true
-          },
+        },
     }
 };
 
