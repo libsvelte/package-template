@@ -27,6 +27,7 @@
 		"svelte-preprocess": "latest",
 		"svelte2tsx": "latest",
 		"tslib": "latest",
-		"typescript": "latest"
+		"typescript": "latest",
+		"tailwindcss":"latest"
 	}
 }
