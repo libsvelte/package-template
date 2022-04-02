@@ -3,10 +3,9 @@
 	"version": "0.0.0",
 	"description": "monorepo package project template",
 	"type": "module",
-	"main": "src/index.ts",
-	"module": "src/index.ts",
-	"svelte": "src/index.ts",
-	"types": "src/index.ts",
+	"main": "index.ts",
+	"module": "index.ts",
+	"types": "index.d.ts",
 	"keywords": [
 		"svelte",
 		"ui"
@@ -15,10 +14,11 @@
 	"homepage": "",
 	"license": "MIT",
 	"scripts": {
-		"package": "svelte-kit package"
+		"package": "copyfiles index.css ./src/ && svelte-kit package && rimraf ./src/index.css"
 	},
 	"devDependencies": {
 		"@sveltejs/kit": "next",
+		"@tsconfig/svelte": "^3.0.0",
 		"autoprefixer": "latest",
 		"cssnano": "latest",
 		"postcss": "latest",
@@ -27,7 +27,6 @@
 		"svelte-preprocess": "latest",
 		"svelte2tsx": "latest",
 		"tslib": "latest",
-		"typescript": "latest",
-		"tailwindcss":"latest"
+		"typescript": "latest"
 	}
 }
